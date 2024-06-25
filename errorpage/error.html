@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <script type="text/javascript" src="errorscript.js"></script>
+</head>
+
+<body>
+  <div class="center">
+    <p class="p1">Check your understanding of the quick sort algorithm. What is the error in the provided picture?</p>
+  </div>
+
+  <ol>
+    <li>Question 1
+      <img id="myImage1" src="errorpics/1.png">
+      <button class="button button1" onclick="myFunction()">Show Answer</button>
+      <div style="display: none;">
+        Error when comparing elements with pivot: 7 and 11.
+      </div>
+    </li>
+
+    <li>Question 2
+      <img id="myImage2" src="errorpics/2.png">
+      <button class="button button1" onclick="myFunction()">Show Answer</button>
+      <div style="display: none;">
+        Redundant pivot element.(Pivot should be ignored when dividing the original array) 
+      </div>   
+    </li>
+
+    <li>Question 3
+      <img id="myImage3" src="errorpics/3.png">
+      <button class="button button1" onclick="myFunction()">Show Answer</button>
+      <div style="display: none;">
+        Forget to merge the pivot element.
+      </div>   
+    </li>
+
+  </ol>
+  <button class="button button2" onclick="back()">Return</button>
+</body>
+
+</html>

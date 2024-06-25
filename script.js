@@ -18,3 +18,8 @@ function press(sw) {
             picid = -1;}}
   document.getElementById('myImage').src = pic;
 };
+
+function quiz() {
+    window.close();
+    window.open('errorpage/error.html');
+}

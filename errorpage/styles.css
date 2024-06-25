@@ -1,4 +1,13 @@
-.center {
+.answerBlock {
+    display: block !important;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+
+  .center {
     text-align: center;
     border: 3px solid green;
   }
@@ -70,16 +79,5 @@
   
   .button4:hover {
     background-color: #555555;
-    color: white;
-  }
-
-  .button5 {
-    background-color: white;
-    color: black;
-    border: 2px solid #f8fc03;
-  }
-  
-  .button5:hover {
-    background-color: #f8fc03;
     color: white;
   }
