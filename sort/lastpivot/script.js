@@ -21,10 +21,10 @@ function press(sw) {
 
 function quiz() {
     window.close();
-    window.open('../errorpage/error.html');
+    window.open('../../errorpage/1.html');
 }
 
 function back() {
     window.close();
-    window.open('../main.html');
+    window.open('../../main.html');
 }
