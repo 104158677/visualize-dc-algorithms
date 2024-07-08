@@ -2,24 +2,29 @@ var pic;
 var picid = 1;
 function press(sw) {
         if (sw == 0) {
-            if (picid == 2 || picid == 4) {alert("It should be conquer after divide");}
-            else if (picid == 6) {alert("23 is already found!");}
+            if (picid <= 3) {picid += 1;}
+            else if (4 <= picid < 6) {alert("Answer is already found! Now return the answer to the original problem(Try conquer instead!)");}
+            else if (picid == 8) {alert("When the answer to the current array is found, try to return it to the original problem using conquer!");}
             else {
-                picid += 1; 
-                pic = "pics/".concat(picid.toString(),".png");}}
+                alert("Problem solved! Try reset or back instead!");}}
         else  if (sw == 1) {
-            if (picid%2 == 1) {alert("It should be divide after conquer");}
-            else if (picid == 6) {alert("23 is already found!");}
+            if (picid <= 3) {
+                alert("Problem unsolved! Try divide instead!");}
+            else if (4 == picid || picid == 5 || picid == 8) {picid += 1;}
             else {
-                picid +=1; 
-                pic = "pics/".concat(picid.toString(),".png");}}
+                alert("Problem solved! Try reset or back instead!");}}
         else  if (sw == 2) {
-            picid = (picid == 1) ? 1 : picid -=1; 
-            pic = "pics/".concat(picid.toString(),".png");}
+            if (picid == 1) {picid == 1;}
+            else if (picid == 7 || picid == 8) {picid -= 6;}
+            else {picid -= 1};}
+        else if (sw == 3) {picid = 1;}
         else {
-            picid = 1;
-            pic = "pics/".concat(picid.toString(),".png");}
-  document.getElementById('myImage').src = pic;}
+            if (picid < 3) {picid += 6;}
+            else if (picid == 3) {picid += 1;}
+            else if (picid == 6 || picid == 7) {alert("Problem solved! Try reset or back instead!");}
+            else {alert("When the answer to the current array is found, try to return it to the original problem using conquer!");}}
+        pic = "pics/".concat(picid.toString(),".png");
+        document.getElementById('myImage').src = pic;}
 
 function quiz() {
     window.close();
