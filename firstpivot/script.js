@@ -1,26 +1,30 @@
 var pic;
 var picid = 1;
-var lastvisited = 1;
 function press(sw) {
-    if (picid == -1 && sw != 1 && sw != 2) {alert("This arrays is already sorted.\nPlease press reset button!");}
-    else{
         if (sw == 0) {
-            lastvisited = picid;
-            picid = (picid == 14) ? 14 : picid +=1; 
-            pic = "pics/".concat(picid.toString(),".png");}
+            myarray = [9,10,12,15,19];
+            if (picid <= 4) {picid += 1;}
+            else if (myarray.includes(picid)) {alert("Problem solved! Try reset or back!")}
+            else {alert("All sub-problems solved, try conquer instead!")}}
          else  if (sw == 1) {
-            picid = lastvisited; 
-            pic = "pics/".concat(picid.toString(),".png");}
+            if (picid <= 4) {alert("Problem unsolved! Try divide instead!");}
+            else if (myarray.includes(picid)) {alert("Problem solved! Try reset or back!")}
+            else {picid += 1;}}
         else  if (sw == 2) {
-            picid = 1;
-            pic = "pics/".concat(picid.toString(),".png");}
-        else {
-            lastvisited = picid;
-            if (picid > 4) {picid = 4;}
-            picid += 9; 
-            pic = "pics/".concat(picid.toString(),".png");
-            picid = -1;}}
-  document.getElementById('myImage').src = pic;
+            if (picid <= 2) {picid += 9;}
+            else if (picid == 3) {picid += 10;}
+            else if (picid == 4) {picid += 12;}
+            else if (myarray.includes(picid)) {alert("Problem solved! Try reset or back!")}
+            else {alert("All sub-problems solved, try conquer instead!")}}
+        else  if (sw == 3) {
+            if (picid == 10 || picid == 11) {picid -= 9;}
+            else if (picid == 1) {picid = 1;}
+            else if (picid == 13) {picid -= 10;}
+            else if (picid == 16) {picid -=12;}
+            else {picid -= 1;}}
+        else {picid = 1;}
+        pic = "pics/".concat(picid.toString(),".png");
+        document.getElementById('myImage').src = pic;
 };
 
 function quiz() {
