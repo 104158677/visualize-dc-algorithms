@@ -1,0 +1,7 @@
+1. Rate the website UI(0~5)
+2. Does this website help you have a better understanding of divide and conquer algorithms?
+3. Are the quizzes helpful?
+4. Rate the user interactions. 
+5. Do the alerts guide you to have better interactions?
+6. Are the usages of these buttons clear?
+7. Open question: feedbacks and suggestions?
