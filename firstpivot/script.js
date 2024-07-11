@@ -5,10 +5,11 @@ function press(sw) {
             myarray = [10,11,13,16,20];
             if (picid <= 4) {picid += 1;}
             else if (myarray.includes(picid)) {alert("Problem solved! Try reset or back!")}
-            else if (picid == 5) {alert("No more division needed, try conquer or solve instead!")}
+            else if (picid == 5) {alert("Sub-problems small enough to be solved! Use the solve button!")}
             else {alert("All sub-problems solved, try conquer instead!")}}
          else  if (sw == 1) {
             if (picid <= 4) {alert("Problem unsolved! Try divide instead!");}
+            else if (picid == 5) {alert("Sub-problem small enough to be solved! Use the solve button before conquer operations!")}
             else if (myarray.includes(picid)) {alert("Problem solved! Try reset or back!")}
             else {picid += 1;}}
         else  if (sw == 2) {
