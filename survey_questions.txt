@@ -1,7 +1,16 @@
-1. Rate the website UI(0~5)
-2. Does this website help you have a better understanding of divide and conquer algorithms?
-3. Are the quizzes helpful?
-4. Rate the user interactions. 
-5. Do the alerts guide you to have better interactions?
-6. Are the usages of these buttons clear?
-7. Open question: feedbacks and suggestions?
+(In this rating, 1-strongly disagree, 2-disagree, 3-neither disagree nor agree, 4-agree, 5-strongly agree)
+  1. Rate the website UI(1~5) 
+  2. Does this website help you have a better understanding of divide and conquer algorithms?(1~5) 
+  3. Are the quizzes helpful?(1~5) 
+  4. Rate the user interactions. (1~5) 
+  5. Do the alerts guide you to have better interactions?(1~5) 
+  6. Are the usage of these buttons clear?(1~5) 
+  7. I found the buttons useful(eg the back button)(1-5)
+  8. I can correctly use these buttons(eg use back to go more than one step back or solve when necessary)(1-5)
+  9. I understood the use of yellow color to distinguish the solutions from problems and green to emphasize the pivot point.(1-5)
+  10. I found the colors useful.(1-5)
+  11. Open question: feedback and suggestions? 
+
+Only for CS students: 
+This project improves your understanding or gives you new thoughts about dc algorithms.(1~5) 
+Compared to programming, this way of learning algorithms is easier to get started.(1~5)
